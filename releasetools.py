@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Custom OTA commands for Motorola msm8960 devices"""
+"""Custom OTA commands for Motorola msm8960_jbbl devices"""
 
 def FullOTA_InstallBegin(info):
 	info.script.AppendExtra('assert(getprop("ro.boot.secure_hardware") == "" || abort("This package is for devices with 4.1 bootloader"););')

@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2014 The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,8 +21,8 @@
 # definition file).
 #
 
-# QCOM SELinux policy
-include device/qcom/sepolicy/sepolicy.mk
+# inherit from the proprietary version
+-include vendor/motorola/msm8960_jbbl-common/BoardConfigVendor.mk
 
 BOARD_VENDOR := motorola-qcom
 
@@ -75,16 +75,20 @@ BOARD_HAVE_NEW_QC_GPS := true
 # Graphics
 BOARD_EGL_CFG := $(LOCAL_PATH)/config/egl.cfg
 
-# Custom relese tools for unified devices
-TARGET_RELEASETOOLS_EXTENSIONS := device/motorola/moto_msm8960_jbbl
+# Media
+TARGET_NO_ADAPTIVE_PLAYBACK := true
 
-# Assert
-TARGET_OTA_ASSERT_DEVICE := moto_msm8960_jbbl,moto_msm8960,xt901,solstice,xt905,smq_u,scorpion_mini_u,xt907,scorpion_mini,xt925,vanquish_u,xt926,vanquish,mb886,qinara,xt897,asanti,xt897c,asanti_c
+# Custom relese tools
+TARGET_RELEASETOOLS_EXTENSIONS := device/motorola/device/motorola/moto_msm8960_jbbl
 
 # Recovery
 TARGET_RECOVERY_DEVICE_DIRS := device/motorola/moto_msm8960_jbbl
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.qcom
+TARGET_USERIMAGES_USE_EXT4 := true
+
+# Telephony
+BOARD_USES_LEGACY_MMAP := true
 
 # TWRP
 TW_EXTERNAL_STORAGE_PATH := "/external_sd"
@@ -94,9 +98,12 @@ TARGET_USERIMAGES_USE_EXT4 := true
 DEVICE_RESOLUTION := 720x1280
 #DEVICE_RESOLUTION := 540x960
 
+# QCOM SELinux policy
+include device/qcom/sepolicy/sepolicy.mk
+
 # SELinux
 BOARD_SEPOLICY_DIRS += \
-    device/motorola/moto_msm8960_jbbl/sepolicy
+    device/motorola/msm8960-common_jbbl/sepolicy
 
 BOARD_SEPOLICY_UNION += \
     atvc.te \
