@@ -99,6 +99,7 @@ TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
 DEVICE_RESOLUTION := 720x1280
 #DEVICE_RESOLUTION := 540x960
 TW_EXCLUDE_DEFAULT_USB_INIT := true
+TW_INCLUDE_CRYPTO := true
 
 # QCOM SELinux policy
 include device/qcom/sepolicy/sepolicy.mk
