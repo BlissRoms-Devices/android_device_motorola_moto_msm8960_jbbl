@@ -1,2 +1,0 @@
-allow qmuxd shell_exec:file rx_file_perms;
-allow qmuxd system_file:file {rx_file_perms execmod};

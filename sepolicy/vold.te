@@ -1,3 +1,0 @@
-allow vold persist_file:dir r_dir_perms;
-
-domain_trans(vold, shell_exec, vold)
