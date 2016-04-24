@@ -41,7 +41,6 @@ TARGET_SPECIFIC_HEADER_PATH += $(LOCAL_PATH)/include
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
 TARGET_INIT_VENDOR_LIB := libinit_msm
-TARGET_LIBINIT_DEFINES_FILE := device/motorola/moto_msm8960_jbbl/init/init_moto_msm8960.c
 
 BOARD_USES_LEGACY_MMAP := true
 
