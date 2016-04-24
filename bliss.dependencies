@@ -13,9 +13,9 @@
   },
   {
     "remote": "github",
-    "repository": "CyanogenMod/android_device_motorola_msm8960_jbbl-common",
+    "repository": "TeamBliss-Devices/android_device_motorola_msm8960_jbbl-common",
     "target_path": "device/motorola/msm8960_jbbl-common",
-    "revision": "cm-13.0"
+    "revision": "mm6.0"
   },
   {
     "remote": "github",
