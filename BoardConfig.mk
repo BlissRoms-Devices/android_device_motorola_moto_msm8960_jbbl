@@ -79,7 +79,7 @@ BOARD_EGL_CFG := $(LOCAL_PATH)/config/egl.cfg
 TARGET_NO_ADAPTIVE_PLAYBACK := true
 
 # Custom relese tools
-TARGET_RELEASETOOLS_EXTENSIONS := device/motorola/device/motorola/moto_msm8960_jbbl
+TARGET_RELEASETOOLS_EXTENSIONS := device/motorola/moto_msm8960_jbbl
 
 # Recovery
 TARGET_RECOVERY_DEVICE_DIRS := device/motorola/moto_msm8960_jbbl
