@@ -13,7 +13,7 @@
   },
   {
     "remote": "github",
-    "repository": "TeamBliss-Devices/android_device_motorola_msm8960_jbbl-common",
+    "repository": "BlissRoms-Devices/android_device_motorola_msm8960_jbbl-common",
     "target_path": "device/motorola/msm8960_jbbl-common",
     "revision": "mm6.0"
   },
