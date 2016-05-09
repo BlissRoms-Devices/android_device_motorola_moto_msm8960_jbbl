@@ -19,9 +19,9 @@
   },
   {
     "remote": "github",
-    "repository": "CyanogenMod/android_device_qcom_common",
+    "repository": "BlissRoms/platform_device_qcom_common",
     "target_path": "device/qcom/common",
-    "revision": "cm-13.0"
+    "revision": "mm6.0"
   },
   {
     "remote": "github",
