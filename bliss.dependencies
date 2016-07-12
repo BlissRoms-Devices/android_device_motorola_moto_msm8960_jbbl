@@ -7,21 +7,21 @@
   },
   {
     "remote": "github",
-    "repository": "CyanogenMod/android_kernel_motorola_msm8960-common",
+    "repository": "MoKee/android_kernel_motorola_msm8960-common",
     "target_path": "kernel/motorola/msm8960-common",
+    "revision": "mkm"
+  },
+  {
+    "remote": "github",
+    "repository": "CyanogenMod/android_device_motorola_msm8960_jbbl-common",
+    "target_path": "device/motorola/msm8960_jbbl-common",
     "revision": "cm-13.0"
   },
   {
     "remote": "github",
-    "repository": "BlissRoms-Devices/android_device_motorola_msm8960_jbbl-common",
-    "target_path": "device/motorola/msm8960_jbbl-common",
-    "revision": "mm6.0"
-  },
-  {
-    "remote": "github",
-    "repository": "BlissRoms/platform_device_qcom_common",
+    "repository": "CyanogenMod/platform_device_qcom_common",
     "target_path": "device/qcom/common",
-    "revision": "mm6.0"
+    "revision": "cm-13.0"
   },
   {
     "remote": "github",
